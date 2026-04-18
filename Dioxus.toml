@@ -1,0 +1,29 @@
+[application]
+
+[web.app]
+
+# HTML title tag content
+title = "budget-app"
+
+# include `assets` in web platform
+[web.resource]
+
+# Additional CSS style files
+style = []
+
+# Additional JavaScript files
+script = []
+
+[web.resource.dev]
+
+# Javascript code file
+# serve: [dev-server] only
+script = []
+
+[bundle.android]
+package_name = "com.zanebennion.budgetapp"
+architectures = ["arm64", "x86_64"]
+jks_file = "~/.android/debug.keystore"
+jks_password = "android"
+key_alias = "androiddebugkey"
+key_password = "android"
