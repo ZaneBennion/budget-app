@@ -3,5 +3,23 @@ body {
     color: #0f1116;
     background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
+}
+
+.settings-bar {
+    background-color: #74b8fc;
+}
+
+.budget-display {
+    text-align: right;
+    background-color: #74b8fc;
+}
+
+.input-display {
+    text-align: right;
+    background-color: #74b8fc;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

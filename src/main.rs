@@ -35,12 +35,36 @@ fn App() -> Element {
 fn Home() -> Element {
     rsx! {
         div {
-            span {
+            class: "home-page",
+            div {
                 class: "settings-bar",
                 Link {
                     to: Route::Settings {},
-                    Icon { data: mdi::Home, size: "24" }
+                    Icon { data: material_symbols::Settings, size: "24" }
                 }
+            }
+            div {
+                class: "budget-display",
+                "$38"
+            }
+            div {
+                class: "input-display",
+                "-14"
+            }
+            div {
+                class: "keypad",
+                button { "7" }
+                button { "8" }
+                button { "9" }
+                button { "4" }
+                button { "5" }
+                button { "6" }
+                button { "1" }
+                button { "2" }
+                button { "3" }
+                button { "C" }
+                button { "0" }
+                button { "=" }                
             }
         }
     }
@@ -51,11 +75,11 @@ fn Home() -> Element {
 pub fn Settings() -> Element {
     rsx! {
         div {
-            span {
+            div {
                 class: "settings-bar",
                 Link {
                     to: Route::Home {},
-                    Icon { data: material_symbols::Settings, size: "24" }
+                    Icon { data: mdi::Home, size: "24" }
                 }
             }
         }
