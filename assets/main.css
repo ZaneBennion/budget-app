@@ -3,23 +3,61 @@ body {
     color: #0f1116;
     background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+.home-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.top-container {
+    background-color: #74b8fc;
+    padding-top: 16px;
+    display: flex;
+    flex-grow: 1;
 }
 
 .settings-bar {
-    background-color: #74b8fc;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.money-displays {
+    flex-grow: 1;
+    height: auto;
 }
 
 .budget-display {
-    text-align: right;
-    background-color: #74b8fc;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 15vh;
+    padding-right: 16px;
 }
 
 .input-display {
     text-align: right;
-    background-color: #74b8fc;
+    font-size: 10vh;
+    height: auto;
+    padding-right: 16px;
+    background-color: #FF9FB2;
 }
 
 .keypad {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    flex-grow: 2;
+    padding: 4px;
+    max-height: 400px;
+}
+
+.keypad-button {
+    border: none;
+    font-size: 8vh;
+    margin: 4px;
+    border-radius: 16px;
 }

@@ -37,34 +37,40 @@ fn Home() -> Element {
         div {
             class: "home-page",
             div {
-                class: "settings-bar",
-                Link {
-                    to: Route::Settings {},
-                    Icon { data: material_symbols::Settings, size: "24" }
+                class: "top-container",
+                div {
+                    class: "settings-bar",
+                    Link {
+                        to: Route::Settings {},
+                        Icon { data: material_symbols::Settings, size: "24" }
+                    }
+                }
+                div {
+                    class: "money-displays",
+                    div {
+                        class: "budget-display",
+                        "$38"
+                    }
+                    div {
+                        class: "input-display",
+                        "-14"
+                    }
                 }
             }
             div {
-                class: "budget-display",
-                "$38"
-            }
-            div {
-                class: "input-display",
-                "-14"
-            }
-            div {
                 class: "keypad",
-                button { "7" }
-                button { "8" }
-                button { "9" }
-                button { "4" }
-                button { "5" }
-                button { "6" }
-                button { "1" }
-                button { "2" }
-                button { "3" }
-                button { "C" }
-                button { "0" }
-                button { "=" }                
+                button { class: "keypad-button", "7" }
+                button { class: "keypad-button", "8" }
+                button { class: "keypad-button", "9" }
+                button { class: "keypad-button", "4" }
+                button { class: "keypad-button", "5" }
+                button { class: "keypad-button", "6" }
+                button { class: "keypad-button", "1" }
+                button { class: "keypad-button", "2" }
+                button { class: "keypad-button", "3" }
+                button { class: "keypad-button", "C" }
+                button { class: "keypad-button", "0" }
+                button { class: "keypad-button", style: "background-color: #A3B18A", "=" }                
             }
         }
     }
